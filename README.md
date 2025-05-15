@@ -60,4 +60,10 @@ Funcionamento:
 
 - Então é feita a verificação na sub-rotina VERIFICAR onde cada elemento de ambas sequências são comparados, caso alguma dê diferente ele chamada a sub-rotina ERROU, caso nenhuma diferença seja encontrada ele chama a sub-rotina ACERTOU
 
-- 
+- Caso ele vá para ERROU a mensagem "errou" aparecerá no monitor serial e o R7 será decrementado para tirar uma vida, caso ele vá para ACERTOU a mensagem "acertou" aparecerá no monitor serial
+
+- Caso o R7 esteja em 0 aparecerá "game over" no monitor serial e o jogo precisa ser reiniciado
+
+- Se ele acertar ele poderá colocar o seu nome na entrada do serial e então dar SEND para aparecer o nick no monitor serial junto a sua pontuação
+
+  # VÍDEO DO FUNCIONAMENTO
