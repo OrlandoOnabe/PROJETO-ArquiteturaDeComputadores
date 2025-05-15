@@ -178,7 +178,6 @@ ERROU:
 	DEC R7 ;perde uma vida
 	MOV A, R7
 	JZ GAME_OVER ;se não  tiver mais vidas da game over
-	ACALL PONTUACAO ;atualiza pontuação
 	JMP RESTART ;se ainda tiver vidas tem uma nova tentativa
 
 RESTART: ;volta os registrados para uma nova sequência do jogador
