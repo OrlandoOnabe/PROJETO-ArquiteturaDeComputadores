@@ -3,8 +3,14 @@ Projeto da disciplina Arquitetura de Computadores
 
 Tema: Jogo de memorização de LEDs acendidos
 
+Projeto realizado por:
 
-#DESCRIÇÂO
+Orlando Nagrockis Bertholdo RA: 24.223.003-5
+
+Lorenzo Colonnese Chigancas RA: 24.223.085-2
+
+
+# DESCRIÇÂO
 
 Apos o usuario começar o jogo uma sequencia de LEDs ira acender, o jogador então devera acertar corretamente a ordem e os LEDs acendidos. 
 
