@@ -46,7 +46,7 @@ Funcionamento:
   
 - Após o botão P2.0 for solto ele chama a sub-rotina SEQ_LED onde será gerado e mostrado uma sequencia de cinco LEDs aleatória
 
-- A sequência aleatória é armazenada na memória 30H
+- A sequência aleatória é armazenada na memória 50H
 
 - Cada LEDs que acender decrementa o R3, a sequência continua até R3 chegar em 0
 
@@ -54,7 +54,7 @@ Funcionamento:
 
 - A cada botão que o jogador pressiona o R2 é decrementado
 
-- A sequência do jogador é armazenada na memória 40H
+- A sequência do jogador é armazenada na memória 60H
 
 - Quando R2 chegar a 0 a sub-rotina PRE_VERIFICAR é chamada, para que R0 e R1 voltem para 30H e 40H para começar a verificação do inicio de ambas sequências
 
@@ -66,4 +66,11 @@ Funcionamento:
 
 - Se ele acertar ele poderá colocar o seu nome na entrada do serial e então dar SEND para aparecer o nick no monitor serial junto a sua pontuação
 
-  # VÍDEO DO FUNCIONAMENTO
+# IMAGENS DO FUNCIONAMENTO
+
+![Score](score.png)
+
+# VÍDEO DO FUNCIONAMENTO
+
+Link: https://youtu.be/ywK5RHfGD3Q
+
