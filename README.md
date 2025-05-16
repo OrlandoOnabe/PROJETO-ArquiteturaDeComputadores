@@ -85,13 +85,11 @@ Acerto/Erro:
 Game Over caso R7 chegue em 0:
 
 ![vida](imagens/vida.png)
+
 ![game](imagens/gameover.png)
 
-Pontuação na memória:
-
+Score com o nick e a pontuação que está no 70H:
 ![pontuacao](imagens/pontuacao.png)
-
-Score:
 
 ![Score](imagens/score.png)
 
