@@ -3,12 +3,13 @@ Projeto da disciplina Arquitetura de Computadores
 
 Tema: Jogo de memorização de LEDs acendidos
 
+Projeto está no arquivo projeto.asm
+
 Projeto realizado por:
 
 Orlando Nagrockis Bertholdo RA: 24.223.003-5
 
 Lorenzo Colonnese Chigancas RA: 24.223.085-2
-
 
 # DESCRIÇÂO
 
@@ -66,9 +67,33 @@ Funcionamento:
 
 - Se ele acertar ele poderá colocar o seu nome na entrada do serial e então dar SEND para aparecer o nick no monitor serial junto a sua pontuação
 
-# IMAGENS DO FUNCIONAMENTO
+# IMAGENS DO PROJETO
 
-![Score](score.png)
+Registradores:
+
+![Registradores](imagens/Registradores.png)
+
+Sequências na memória:
+
+![Memoria](imagens/Memoria.png)
+
+Acerto/Erro:
+
+![Erro](imagens/errado.png)
+![Acerto](imagens/acerto.png)
+
+Game Over caso R7 chegue em 0:
+
+![vida](imagens/vida.png)
+![game](imagens/gameover.png)
+
+Pontuação na memória:
+
+![pontuacao](imagens/pontuacao.png)
+
+Score:
+
+![Score](imagens/score.png)
 
 # VÍDEO DO FUNCIONAMENTO
 
