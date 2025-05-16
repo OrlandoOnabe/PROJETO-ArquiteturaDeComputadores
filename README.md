@@ -89,6 +89,7 @@ Game Over caso R7 chegue em 0:
 ![game](imagens/gameover.png)
 
 Score com o nick e a pontuação que está no 70H:
+
 ![pontuacao](imagens/pontuacao.png)
 
 ![Score](imagens/score.png)
