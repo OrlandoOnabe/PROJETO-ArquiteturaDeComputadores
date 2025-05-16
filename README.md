@@ -11,7 +11,7 @@ Orlando Nagrockis Bertholdo RA: 24.223.003-5
 
 Lorenzo Colonnese Chigancas RA: 24.223.085-2
 
-# DESCRIÇÂO
+# DESCRIÇÃO
 
 Apos o usuario começar o jogo uma sequencia de LEDs ira acender, o jogador então devera acertar corretamente a ordem e os LEDs acendidos. 
 
