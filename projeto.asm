@@ -7,7 +7,6 @@ INICIO:
 	MOV TH0, #0 ;zera o TH0
 	MOV TL0, #0 ;zera o TL0
     SETB TR0 ;inicia o Timer 0
-	MOV P1, P2
 	JB P2.0, INICIO	;se P2.0 estiver solto continua no INICIO
 	ACALL COMECANDO ;senão vai para a rotina COMECANDO para inicar jogo
 
@@ -15,8 +14,8 @@ COMECANDO:
 	MOV R2, #5 ;tamanho da sequência do jogador
 	MOV R3, #5 ;tamanho da sequência de LEDs gerada
 	MOV R6, #5 ;contador para verificação
-	MOV R0, #30H ;local para armazenar a sequência aleatória
-	MOV R1, #40H ;local para armazenar a sequência do jogador
+	MOV R0, #50H ;local para armazenar a sequência aleatória
+	MOV R1, #60H ;local para armazenar a sequência do jogador
 	MOV R7, #3 ;vidas e pontuação
 	JNB P2.0, COMECANDO ;enquanto botão P2.0 não for solto continua no COMECANDO
 	ACALL SEQ_LED ;senão vai para a rotina da seq de LEDs aleatória
@@ -131,8 +130,8 @@ LED_BOTAO_7:
 	ACALL SEQ_JOGADOR
 
 PRE_VERIFICAR:
-	MOV R0, #30H ;volta para o começo da seq aleatoria na memoria
-	MOV R1, #40H ;volta para o começo da seq jogador na memoria
+	MOV R0, #50H ;volta para o começo da seq aleatoria na memoria
+	MOV R1, #60H ;volta para o começo da seq jogador na memoria
 	JMP VERIFICAR
 
 VERIFICAR:
@@ -164,6 +163,9 @@ ACERTOU:
 	JMP NICKNAME ;chama para o usuario colocar o nickname
 
 ERROU:
+	DEC R7 ;perde uma vida
+	MOV A, R7
+	JZ GAME_OVER ;se não  tiver mais vidas da game over
 	ACALL SERIAL ;inicia o serial
 	MOV A, #'E' ;escreve "ERROU" no serial
 	ACALL LB
@@ -175,15 +177,12 @@ ERROU:
 	ACALL LB
 	MOV A, #'U'
 	ACALL LB
-	DEC R7 ;perde uma vida
-	MOV A, R7
-	JZ GAME_OVER ;se não  tiver mais vidas da game over
 	JMP RESTART ;se ainda tiver vidas tem uma nova tentativa
 
 RESTART: ;volta os registrados para uma nova sequência do jogador
 	MOV R2, #5
 	MOV R6, #5
-	MOV R1, #40H
+	MOV R1, #60H
 	JMP SEQ_JOGADOR ;jogador tenta denovo
 
 GAME_OVER:
