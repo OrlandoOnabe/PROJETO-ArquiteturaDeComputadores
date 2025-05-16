@@ -73,7 +73,7 @@ Registradores:
 
 ![Registradores](imagens/Registradores.png)
 
-Sequências na memória:
+Sequências na memória (50H para a do jogo e 60H para a do jogador):
 
 ![Memoria](imagens/Memoria.png)
 
